@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS styles for layout and appearance */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            display: none;
+            text-align: center;
+            margin: 20px;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <title>Single HTML Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Website</h1>
+    </header>
+    
+    <main>
+        <button onclick="showSection('section1')">Show Section 1</button>
+        <button onclick="showSection('section2')">Show Section 2</button>
+    </main>
+
+    <section id="section1" class="section">
+        <h2>WEB DEVELOPER</h2>
+        <p>This is the frontend developer of your website.</p>
+        <img src="https://t3.ftcdn.net/jpg/02/92/88/72/240_F_292887204_2wH041phSQo70eqaE9GRqFvn5MmQ4B8w.jpg" alt="Image 1" width="50%">
+    </section>
+
+    <section id="section2" class="section">
+        <h2>GIF Video</h2>
+        <p>A GIF is a visual format that displays a series of sequential images, producing an animated effect.</p>
+        <video controls width="40%" height="20%" autoplay>
+            <source src= "movie.mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section) => {
+                section.style.display = 'none';
+            });
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

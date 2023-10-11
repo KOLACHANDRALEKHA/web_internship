@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for table styling */
+        table {
+            width: 80%; /* Set the table width */
+            border-collapse: collapse; /* Remove default cell spacing */
+            margin: 20px auto; /* Center-align the table */
+        }
+        h2{
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px 15px; /* Add some padding for cells */
+            text-align: left; /* Align text to the left */
+            border-bottom: 1px solid #ddd; /* Add a bottom border for cells */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Background color for table header */
+        }
+
+        /* Apply alternating row colors for better readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Add some hover effect for better interaction */
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+    <title>Table Integration</title>
+</head>
+<body>
+    <h2>Product Comparison Table</h2>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Feature 1</th>
+            <th>Feature 2</th>
+            <th>Feature 3</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Product A</td>
+            <td>Feature A1</td>
+            <td>Feature A2</td>
+            <td>Feature A3</td>
+            <td>₹199</td>
+        </tr>
+        <tr>
+            <td>Product B</td>
+            <td>Feature B1</td>
+            <td>Feature B2</td>
+            <td>Feature B3</td>
+            <td>₹149</td>
+        </tr>
+        <tr>
+            <td>Product C</td>
+            <td>Feature C1</td>
+            <td>Feature C2</td>
+            <td>Feature C3</td>
+            <td>₹249</td>
+        </tr>
+    </table>
+</body>
+</html>
